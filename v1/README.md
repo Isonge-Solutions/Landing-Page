@@ -1,5 +1,14 @@
 # Isonge Solutions Landing Page
 
+## 🚀 Getting Started
+
+### 0. Switch to Your Branch
+Before setting up, make sure you’re on the correct branch and pull the latest changes:
+
+```bash
+git checkout your-branch-name
+git pull origin main
+```
 
 ## 📦 Initial Setup
 
