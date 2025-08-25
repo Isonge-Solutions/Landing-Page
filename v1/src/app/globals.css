@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "@tailwindcss/typography";
 
 :root {
   /* 🌈 Colors */
@@ -26,16 +25,13 @@
   --text-5xl: 3rem;
   --text-6xl: 3.75rem;
 
-  --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  --font-mono: var(--font-geist-mono), monospace;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: monospace;
 
   /* 🏷 Headings */
   --heading-color: var(--color-dark);
   --heading-weight: 700;
 }
-
-/* Force Light Mode: remove dark mode overrides */
-/* @media (prefers-color-scheme: dark) { ... } */
 
 body {
   background: var(--background);
@@ -44,7 +40,6 @@ body {
   line-height: 1.6;
 }
 
-/* Headings default */
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-weight: var(--heading-weight);
@@ -57,12 +52,3 @@ h3 { font-size: var(--text-3xl); }
 h4 { font-size: var(--text-2xl); }
 h5 { font-size: var(--text-xl); }
 h6 { font-size: var(--text-lg); }
-
-/* Tailwind Typography (prose) colors */
-.prose {
-  --tw-prose-body: var(--color-slate);
-  --tw-prose-headings: var(--color-dark);
-  --tw-prose-links: var(--color-accent);
-  --tw-prose-bold: var(--color-dark);
-  --tw-prose-quotes: var(--color-light);
-}
