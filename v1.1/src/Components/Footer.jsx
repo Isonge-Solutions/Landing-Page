@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="relative mt-10">
       {/* Top Section */}
-      <div className="flex md:flex-row sm:flex-col flex-wrap gap-5 ms-5 me-5 md:items-center justify-between">
+      <div className="flex lg:flex-row flex-col flex-wrap gap-5 ms-5 me-5 lg:items-center justify-between">
         {/* Logo & About */}
         <div className="flex flex-col gap-5 flex-wrap">
           <div>
@@ -16,18 +16,18 @@ const Footer = () => {
             </h1>
           </div>
 
-          <div className="flex gap-16">
+          <div className="flex lg:flex-row flex-col gap-16">
             {/* About + Contact */}
             <div>
               <div>
-                <h4 className="text-customm text-xl">About Us</h4>
+                <h6 className="text-customm text-xl">About Us</h6>
                 <p>
                   We help you reach a large audience at the click of a button
                 </p>
               </div>
 
               <div className="mt-4">
-                <h4 className="text-customm text-xl pb-3">Contact Us</h4>
+                <h6 className="text-customm text-xl pb-3">Contact Us</h6>
                 <ul className="flex flex-col gap-3">
                   <li className="flex gap-4">
                     <PhoneCall size={20} className="text-customm" />
@@ -42,8 +42,9 @@ const Footer = () => {
             </div>
 
             {/* Information Links */}
-            <div className="flex flex-col gap-2">
-              <h4 className="text-customm text-xl">Information</h4>
+            <div className="flex justify-between gap-16">
+                          <div className="flex flex-col gap-2">
+              <h6 className="text-customm text-xl">Information</h6>
               <ul className="flex flex-col gap-2">
                 <li>About Us</li>
                 <li>Blog</li>
@@ -52,10 +53,8 @@ const Footer = () => {
                 <li>Events</li>
               </ul>
             </div>
-
-            {/* Helpful Links */}
-            <div>
-              <h4 className="text-customm text-xl pb-3">Helpful Links</h4>
+             <div>
+              <h6 className="text-customm  pb-3">Helpful Links</h6>
               <ul className="flex flex-col gap-2">
                 <li>Services</li>
                 <li>Supports</li>
@@ -63,10 +62,12 @@ const Footer = () => {
                 <li>Privacy Policy</li>
               </ul>
             </div>
+            </div>
 
+            {/* Helpful Links */}
             {/* Newsletter */}
             <div className="flex flex-col gap-3">
-              <h4 className="text-lg mb-4">Subscribe To Our Newsletter</h4>
+              <h6 className="text-lg mb-4">Subscribe To Our Newsletter</h6>
               <input
                 type="text"
                 placeholder="Enter your Email"

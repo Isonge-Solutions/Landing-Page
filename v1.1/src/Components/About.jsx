@@ -8,12 +8,12 @@ const About = () => {
       <div>
         <h3>About Us</h3>
       </div>
-      <div className='flex items-center   gap-12 justify-between'>
-        <div className='w-2/5 tracking-wide'>
-          <p className='text-4xl'>Empower Your Business's Financial Future Effortlessly</p>
+      <div className='flex lg:flex-row flex-col items-center   gap-12 lg:justify-between'>
+        <div className='lg:w-1/2 lg:tracking-wide'>
+          <p className='lg:text-4xl text-2xl'>Empower Your Business's Financial Future Effortlessly</p>
         </div>
-        <div className='w-1/2'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet aut incidunt excepturi, eaque deserunt itaque cupiditate aspernatur inventore nihil ipsa officia, nesciunt eligendi natus? Ex temporibus mollitia deserunt recusandae.</p>
+        <div className='lg:w-1/2 '>
+          <p className='lg:text-base text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet aut incidunt excepturi, eaque deserunt itaque cupiditate aspernatur inventore nihil ipsa officia, nesciunt eligendi natus? Ex temporibus mollitia deserunt recusandae.</p>
         </div>
 
       </div>
@@ -23,11 +23,11 @@ const About = () => {
 
     </div>
     <div className='pt-12'>
-      <div className='flex justify-between items-center'>
+      <div className='flex lg:flex-row flex-col lg:justify-between items-center'>
         <div>
           <img src={Aboutimage} className='rounded-md h-[400px] w-[600px]' alt="" />
         </div>
-        <div className='w-1/2'>
+        <div className='lg:w-1/2 pt-12'>
         <div className='flex flex-col gap-12'>
           <div className='bg-accent rounded-lg p-6'>
             <div className=''>
