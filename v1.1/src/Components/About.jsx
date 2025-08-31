@@ -13,17 +13,17 @@ const About = () => {
           <p className='lg:text-4xl text-2xl'>Empower Your Business's Financial Future Effortlessly</p>
         </div>
         <div className='lg:w-1/2 '>
-          <p className='lg:text-base text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet aut incidunt excepturi, eaque deserunt itaque cupiditate aspernatur inventore nihil ipsa officia, nesciunt eligendi natus? Ex temporibus mollitia deserunt recusandae.</p>
+          <p className='lg:text-base text-lg'>We exist to close the digital gap for SMEs by providing accessible, affordable, and future-ready technology that helps them thrive in a connected world.</p>
         </div>
 
       </div>
-      <div className='pt-6'>
+      {/* <div className='pt-6'>
         <button className='bg-slate rounded-full px-4 py-1 text-accent text-xl'>Get Started</button>
-      </div>
+      </div> */}
 
     </div>
     <div className='pt-12'>
-      <div className='flex lg:flex-row flex-col lg:justify-between items-center'>
+      <div className='flex lg:flex-row flex-col justify-between items-center'>
         <div>
           <img src={Aboutimage} className='rounded-md h-[400px] w-[600px]' alt="" />
         </div>
@@ -31,14 +31,14 @@ const About = () => {
         <div className='flex flex-col gap-12'>
           <div className='bg-accent rounded-lg p-6'>
             <div className=''>
-              <h4>Our Mission</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate pariatur adipisci quisquam necessitatibus facere iure animi quo quidem praesentium earum, laudantium corrupti, quos culpa magnam excepturi in nihil ipsam.</p>
+              <h4>Our Vision</h4>
+              <p>To empower SMEs across Africa with transformative digital solutions that drive growth, efficiency, and global competitiveness.</p>
             </div>
             </div>
           <div className='bg-slate rounded-lg p-6'>
               <div>
-              <h4>Our Vision</h4>
-              <p className='text-white opacity-90'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptate pariatur adipisci quisquam necessitatibus facere iure animi quo quidem praesentium earum, laudantium corrupti, quos culpa magnam excepturi in nihil ipsam.</p>
+              <h4>Our Mission</h4>
+              <p className='text-white opacity-90'>Empowering SMEs with innovative tech solutions that streamline operations and drive business growth.</p>
             </div>
             </div>
 

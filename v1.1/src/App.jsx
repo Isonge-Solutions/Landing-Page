@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
-import Hero from "./Components/Hero.jsx";   // <-- Import Hero
-import Heroimage from "./assets/images/Hero.png"; // simplified path
-import About from "./Components/About.jsx"
+import Hero from "./Components/Hero.jsx";
+import Heroimage from "./assets/images/Hero.png";
+import About from "./Components/About.jsx";
+import Services from "./Components/Services.jsx";
+import CTA from "./Components/CTA.jsx";
+import Contactform from "./Components/Contactform.jsx";
+
 const App = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <>
       <div>
@@ -12,12 +18,17 @@ const App = () => {
           className="bg-cover bg-center h-screen"
           style={{ backgroundImage: `url(${Heroimage})` }}
         >
-          <Navbar />
-          <Hero />
+          <Navbar onContactClick={() => setOpenModal(true)} />
+          <Hero onContactClick={() => setOpenModal(true)} />
         </div>
-        <About/>
 
+        <About />
+        <Services />
+        <CTA onContactClick={() => setOpenModal(true)} />
         <Footer />
+
+        {/* Shared Modal */}
+        <Contactform open={openModal} onClose={() => setOpenModal(false)} />
       </div>
     </>
   );
