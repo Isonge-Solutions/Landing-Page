@@ -3,36 +3,36 @@ import { Smartphone, Code2, Boxes, ShoppingCart, Users, ArrowUpRight } from "luc
 
 const servicesData = [
   {
-    title: "Website Development",
-    description: "Modern, fast and SEO-ready sites",
+    title: "Website Development & SEO",
+    description: "Build a fast, mobile-friendly, and SEO-optimized website that attracts customers and converts traffic into revenue.",
     icon: <Code2 size={20} />,
     bg: "bg-slate text-white",
     rotate: "-rotate-3" // 👈 only Website Development tilted
   },
   {
-    title: "Mobile App Development",
-    description: "iOS, Android & cross-platform builds",
+    title: "Mobile App Solutions",
+    description: "Custom iOS, Android, and cross-platform apps to connect your business with customers anywhere, anytime.",
     icon: <Smartphone size={20} />,
     bg: "bg-white text-black",
     rotate: ""
   },
   {
-    title: "Systems Development",
-    description: "Product catalogs, checkout & payments",
+    title: "Enterprise System Development",
+    description: "Custom ERP, CRM, and POS solutions with product catalogs, checkout, and secure payment integrations. ",
     icon: <ShoppingCart size={20} />,
     bg: "bg-white text-black",
     rotate: ""
   },
   {
-    title: "Consultants",
-    description: "Integrations, workflows & reporting",
+    title: "Business & Tech Consulting",
+    description: "Expert guidance on process automation, integrations, and business analytics to help you scale efficiently.",
     icon: <Boxes size={20} />,
     bg: "bg-white text-black",
     rotate: ""
   },
   {
-    title: "Pen-Testing",
-    description: "Leads, pipelines & analytics",
+    title: "Cybersecurity & Pen Testing",
+    description: "Safeguard your systems with penetration testing, risk assessments, and advanced analytics.",
     icon: <Users size={20} />,
     bg: "bg-white text-black",
     rotate: ""
@@ -47,8 +47,8 @@ const Services = () => {
           
           {/* Section Heading */}
           <div className="flex flex-col gap-6">
-            <h5>Amazing Services</h5>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <h5>What We Offer</h5>
+            <p>We provide end-to-end technology solutions to help your business grow.</p>
           </div>
 
           {/* Services Cards */}
@@ -68,7 +68,7 @@ const Services = () => {
               {/* Contact Sales Button */}
               <a
                 href={`mailto:info@isonge.co.ke?subject=${encodeURIComponent(service.title)}`}
-                className="mt-4 inline-flex items-center gap-1 text-accent font-medium hover:text-black transition-transform duration-300 group"
+                className="mt-4 inline-flex items-center gap-1 text-slate font-semibold hover:text-black transition-transform duration-300 group"
               >
                 Contact Sales
                 <ArrowUpRight

@@ -1,6 +1,7 @@
 import React from "react";
 import { PhoneCall, Mail } from "lucide-react";
 import { Facebook, Twitter, Instagram } from "lucide-react";
+import Logo from "../../public/logo2.png"
 
 const Footer = () => {
   return (
@@ -10,9 +11,9 @@ const Footer = () => {
         <div className="flex lg:flex-row flex-col flex-wrap gap-5 ms-5 me-5 lg:items-center justify-between">
           {/* Logo & About */}
           <div className="flex flex-col gap-5 flex-wrap">
-            <div>
-              <img src="" alt="logo" />
-              <h1 className="text-lg font-semibold flex gap-1 md:text-3xl">
+            <div className="flex items-center gap-3">
+              <img src={Logo} className="lg:w-[40px] w-[30px] " alt="logo" />
+              <h1 className="text-lg font-semibold flex gap-1 md:text-3xl mt-4 lg:mt-6">
                 Isonge <span className="text-accent">Solutions</span>
               </h1>
             </div>
@@ -83,7 +84,7 @@ const Footer = () => {
                   placeholder="Enter your Email"
                   className="md:py-3 sm:py-2 h-[40px] px-2 rounded border"
                 />
-                <button className="float-left bg-slate px-3 py-1 rounded mt-2">
+                <button className="float-left text-white bg-slate px-3 py-1 rounded mt-2">
                   Subscribe
                 </button>
               </div>
@@ -114,3 +115,4 @@ const Footer = () => {
 };
 
 export default Footer;
+ 

@@ -16,9 +16,7 @@ const CTA = () => {
             Build your ideal workspace today.
           </h2>
           <p className="text-center mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente
-            odio reprehenderit, eius ea molestiae obcaecati harum voluptate iste
-            corrupti.
+            Your growth starts with the right technology partner. Let's create solutions that help your business lead, compete, and thrive.
           </p>
         </div>
         <div>

@@ -15,7 +15,7 @@ const App = () => {
     <>
       <div>
         <div
-          className="bg-cover bg-center h-screen"
+          className="bg-cover bg-center "
           style={{ backgroundImage: `url(${Heroimage})` }}
         >
           <Navbar onContactClick={() => setOpenModal(true)} />

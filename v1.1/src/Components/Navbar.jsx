@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Logo from "../../public/logo2.png"
 
 const Navbar = ({ onContactClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,16 +15,19 @@ const Navbar = ({ onContactClick }) => {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative lg:pb-12 pb-2">
       <div className="relative z-10 flex justify-center h-full">
         <div className="top-0 z-50 rounded-md h-10 w-full">
           <div className="container px-4 pt-2 mx-auto relative text-sm pb-3 flex items-center justify-between">
             {/* Logo */}
-            <div className="flex items-center">
-              <h1 className="text-2xl tracking-tight ml-2 text-black">
-                Isonge <span className="text-accent">Solutions</span>
-              </h1>
-            </div>
+             <div className="flex flex-col gap-5 flex-wrap">
+                        <div className="flex items-center gap-3">
+                          <img src={Logo} className="lg:w-[40px] w-[30px] " alt="logo" />
+                          <h1 className="text-lg font-semibold flex gap-1 md:text-3xl mt-4 lg:mt-6">
+                            Isonge <span className="text-accent">Solutions</span>
+                          </h1>
+                        </div>
+                        </div>
 
             {/* Mobile Menu Button */}
             <button

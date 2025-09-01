@@ -6,18 +6,15 @@ const Hero = () => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div className='relative mt-20 m-12 '>
+    <div className='relative mt-18 lg:m-12 m-6 lg:text-start text-center '>
       <div className='flex items-center justify-between'>
         
         {/* Left Side */}
         <div>
-          <div className='lg:w-[600px] w-[300px]'>
-            <h1>Your Goals, Our Expertise - Financial Success</h1>
+          <div className='md:w-[500px] sm:w-[400px] w-[300px]  '>
+            <h2>Your Goals, Our Expertise - Financial Success</h2>
             <p className='text-neutral-600'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Fugit totam, enim voluptas ipsa iure similique vero quam possimus 
-              atque laborum hic! Atque at cum repellendus excepturi consequatur 
-              earum, molestiae minus.
+              Empowering Africa’s SMEs with future-ready digital solutions. From websites to enterprise systems, we help businesses grow smarter, faster, and stronger in a connected world.
             </p>
           </div>
 
