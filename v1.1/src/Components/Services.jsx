@@ -67,15 +67,16 @@ const Services = () => {
 
               {/* Contact Sales Button */}
               <a
-                href={`mailto:info@isonge.co.ke?subject=${encodeURIComponent(service.title)}`}
-                className="mt-4 inline-flex items-center gap-1 text-slate font-semibold hover:text-black transition-transform duration-300 group"
-              >
-                Contact Sales
-                <ArrowUpRight
-                  size={18}
-                  className="transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                />
-              </a>
+  href={`mailto:info@isonge.co.ke?subject=${encodeURIComponent(service.title)}`}
+  className={`mt-4 inline-flex items-center gap-1 font-semibold transition-transform duration-300 group
+    ${service.bg.includes("bg-slate") ? "text-white hover:text-gray-200" : "text-slate hover:text-black"}`}
+>
+  Contact Sales
+  <ArrowUpRight
+    size={18}
+    className="transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+  />
+</a>
             </div>
           ))}
         </div>
